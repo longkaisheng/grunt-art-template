@@ -29,6 +29,9 @@ module.exports = function(grunt) {
         });
         template.defaults.root = options.root;
         template.defaults.extname = options.extname;
+        // 原生语法的界定符规则
+        template.defaults.rules[0].test = /@%(#?)((?:==|=#|[=-])?)([\w\W]*?)(-?)%@/;
+        template.defaults.rules[1].test = /@%(#?)((?:==|=#|[=-])?)([\w\W]*?)(-?)%@/;
 
         this.files.forEach(function(f) {
             var fileList = f.src.filter(function(filepath) {

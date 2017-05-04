@@ -1,16 +1,16 @@
-{{extend './template/layout.art'}}
+@% extend('./template/layout.art') %@
 <!--title-->
-{{block 'title'}}grunt art-template{{/block}}
+@% block('title', function(){ %@首页@% }) %@
 <!--head-->
-{{block 'head'}}
-<link rel="stylesheet" href="index.css?v={{v}}"> {{/block}}
+@% block('head', function(){ %@
+<link rel="stylesheet" type="text/css" href="index.css?v=@%=v%@" /> @% }) %@
 <!--content-->
-{{block 'content'}}
+@% block('content', function(){ %@
 <div class="wrapper">
-    <p>grunt art-template</p>
+    <p>你好！</p>
 </div>
-{{/block}}
-<!--javascript-->
-{{block 'js'}}
-<script src='index.js?v={{v}}'></script>
-{{/block}}
+@% }) %@
+<!--js-->
+@% block('js', function(){ %@
+<script src='index.js?v=@%=v%@'></script>
+@% }) %@

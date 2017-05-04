@@ -14,20 +14,20 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>@% block('title') %@</title>
     <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <title>{{block 'title'}}{{/block}}</title>
-    {{block 'head'}}{{/block}}
+    <meta name="description" content="" /> @% block('head') %@
 </head>
 
 <body>
-    {{include './header.art'}}
-    <div class="content">
-        {{block 'content'}}{{/block}}
+    <div class="page">
+        @% include('./header.art') %@
+        <div class="content">
+            @% block('content') %@
+        </div>
+        @% include('./footer.art') %@
     </div>
-    {{include './footer.art'}}
-    <!--javascript-->
-    {{block 'js'}}{{/block}}
+    @% block('js') %@
 </body>
 
 </html>

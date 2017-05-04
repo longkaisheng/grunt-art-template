@@ -1,0 +1,16 @@
+{{extend './template/layout.art'}}
+<!--title-->
+{{block 'title'}}grunt art-template{{/block}}
+<!--head-->
+{{block 'head'}}
+<link rel="stylesheet" href="index.css?v={{v}}"> {{/block}}
+<!--content-->
+{{block 'content'}}
+<div class="wrapper">
+    <p>grunt art-template</p>
+</div>
+{{/block}}
+<!--javascript-->
+{{block 'js'}}
+<script src='index.js?v={{v}}'></script>
+{{/block}}

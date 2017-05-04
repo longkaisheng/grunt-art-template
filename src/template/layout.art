@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html class="ie6"></html><![endif]-->
+<!--[if IE 7]>
+<html class="ie7"></html><![endif]-->
+<!--[if IE 8]>
+<html class="ie8"></html><![endif]-->
+<!--[if IE 9]>
+<html class="ie9"></html><![endif]-->
+<!--[if(gt IE 9)|!(IE)]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>{{block 'title'}}{{/block}}</title>
+    {{block 'head'}}{{/block}}
+</head>
+
+<body>
+    {{include './header.art'}}
+    <div class="content">
+        {{block 'content'}}{{/block}}
+    </div>
+    {{include './footer.art'}}
+    <!--javascript-->
+    {{block 'js'}}{{/block}}
+</body>
+
+</html>

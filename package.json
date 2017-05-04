@@ -1,0 +1,15 @@
+{
+  "name": "grunt-art-template",
+  "version": "1.0.0",
+  "description": "art-template",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "art-template": "^4.7.0"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "art-template": "^4.7.0",
+    "grunt": "^1.0.1"
+  }
+}
